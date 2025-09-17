@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix – Sign In</title>
+  <link rel="icon" href="./asserts/logo.svg">
+  <!-- Using the user's existing stylesheet for the login page -->
+  <link rel="stylesheet" href="netflix.css" />
+</head>
+<body>
+  <nav>
+    <a href="#">
+      <img src="./asserts/logo.svg" alt="Netflix" />
+    </a>
+  </nav>
+
+  <div class="form-wrapper">
+    <h2>Sign In</h2>
+    <form id="login-form" novalidate>
+      <div class="form-control">
+        <input id="emailPhone" name="emailPhone" type="text" required aria-describedby="emailHelp">
+        <label>Email or Phone Number</label>
+      </div>
+      <small id="emailHelp" style="display:block;margin:-10px 0 10px;color:#ff8080;"></small>
+
+      <div class="form-control">
+        <input id="password" name="password" type="password" required aria-describedby="passHelp">
+        <label>Password</label>
+      </div>
+      <small id="passHelp" style="display:block;margin:-10px 0 10px;color:#ff8080;"></small>
+
+      <button type="submit">Sign In</button>
+
+      <div class="form-help">
+        <div class="remember-me">
+          <input type="checkbox" id="remember-me" />
+          <label for="remember-me">Remember me</label>
+        </div>
+        <a href="#">Need help?</a>
+      </div>
+    </form>
+
+    <p>New to Netflix? <a href="#">Sign Up now</a></p>
+    <small>
+      This page is protected by Google reCAPTCHA to ensure you're not a bot.
+      <a href="#">Learn more.</a>
+    </small>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

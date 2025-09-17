@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix – Home</title>
+  <link rel="icon" href="./asserts/logo.svg">
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="left">
+      <img class="logo" src="./asserts/logo.svg" alt="Netflix" />
+      <nav class="main-nav">
+        <a href="#" class="active">Home</a>
+        <a href="#">TV Shows</a>
+        <a href="#">Movies</a>
+        <a href="#">New & Popular</a>
+        <a href="#">My List</a>
+      </nav>
+    </div>
+    <div class="right">
+      <input id="search" class="search" placeholder="Search…" />
+      <button id="logout" class="btn ghost">Logout</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Carousel -->
+    <section class="carousel" aria-label="Featured">
+      <button class="nav prev" aria-label="Previous">&#10094;</button>
+      <div class="slides" id="slides"></div>
+      <button class="nav next" aria-label="Next">&#10095;</button>
+      <div class="dots" id="dots"></div>
+    </section>
+
+    <!-- Rows -->
+    <section id="rows"></section>
+  </main>
+
+  <!-- Video Player Modal -->
+  <div id="video-modal" class="video-modal" aria-hidden="true" role="dialog" aria-label="Video player">
+    <div class="video-wrap">
+      <button id="close-video" class="close-video" aria-label="Close">✕</button>
+      <video id="player" controls playsinline></video>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div>Demo UI. Images are placeholders.</div>
+  </footer>
+
+  <script src="home.js"></script>
+</body>
+</html>
